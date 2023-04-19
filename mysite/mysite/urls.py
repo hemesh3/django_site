@@ -4,8 +4,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index,name='index'),
-    path('remove_cap', views.remove_cap,name='rmv'),
-    path('contact', views.contact,name='contact'),
-    path('post', views.post,name='post'),
-    path('about', views.about,name='about'),
+    path('about/', views.about,name='about_us'),
+    path('contact/', views.contact,name='contact'),
+    path('rooms/', views.rooms,name='rooms'),
+    path('gallery/', views.gallery,name='gallery'),
+    path('blog/', views.blog,name='blog'),
 ]
