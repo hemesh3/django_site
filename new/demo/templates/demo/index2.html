@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+<h1>HOME PAGE </h1>
+<div>
+    <div>
+        <div>
+            <a href="{% url 'pos' position12.id %}"><h1>{{position12.id}} -- {{position12.name}} -- {{position12.position}}</h1></a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
